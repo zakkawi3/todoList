@@ -98,11 +98,13 @@ function HomeScreen({ navigation }) {
 // Privacy Screen
 function PrivacyScreen({ navigation }) {
   return (
-    <View style={styles.tasksWrapper}>
+    <View style={styles.container}>
+      <View style={styles.tasksWrapper}>
       <Text style={styles.sectionTitle}>Privacy Page</Text>
       <TouchableOpacity onPress={() => navigation.navigate('Home')}>
         <Text style={styles.backText}>Back to Home</Text>
       </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -123,7 +125,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8EAED',
+    backgroundColor: '#2a3857',
   },
   tasksWrapper: {
     paddingTop: 40,
@@ -132,6 +134,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: 'bold',
+    color: '#fff'
   },
   items: {
     marginTop: 30,
@@ -174,7 +177,7 @@ const styles = StyleSheet.create({
   },
   menuText: {
     fontSize: 18,
-    fontWeight: 'bold',
+    color: '#fff'
   },
   // Privacy Screen styles
   backText: {
@@ -182,6 +185,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 20,
     paddingLeft: 20,
-    color: 'blue',
+    color: '#fff'
   },
 });
